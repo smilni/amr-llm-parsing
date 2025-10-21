@@ -1,0 +1,75 @@
+invalid AMR: 
+(v / visit-01
+    :ARG0 (p / person :ARG0-of (i / inspect-01 :ARG1 (a / arm))
+                    :location (o / organization :wiki "United_Nations" :name (n / name :op1 "United" :op2 "Nations")))
+    :ARG1 (s / site :quant 7)
+    :location (c / country :wiki "Iraq" :name (n2 / name :op1 "Iraq"))
+    :time (d / date-entity :year 2002 :month 12 :day 28)
+    :purpose (s2 / search-01
+        :ARG1 (w / weapon
+            :mod (d / destroy-01 :mod (m / mass))
+            :ARG1-of (p2 / prohibit-01)))
+    :medium (s3 / say-01
+        :ARG0 (p3 / spokesman :wiki "Hiro_Ueki" :name (n3 / name :op1 "Hiro" :op2 "Ueki"))))
+ | reason: ["Multiple :instance triples for variable 'd' (date-entity and destroy-01)."]
+invalid AMR: 
+(i / increase-01
+  :ARG0 (p / person
+    :ARG0-of (i2 / insurgent)
+    :mod (a / anti)
+    :mod (g / government))
+  :ARG1 (a2 / activity
+    :mod (v / violent))
+  :location (k / kingdom
+    :mod (r / region :name (n / name :op1 "Himalayan")))
+  :time (s / since
+    :op1 (e / expire-01
+      :ARG1 (s2 / state
+        :mod (e2 / emergency)
+        :mod (s3 / state-of-emergency :duration (t / temporal-quantity :quant 9 :unit (m / month))
+               :mod (n / nationwide)))
+      :time (d / date-entity
+        :month 8
+        :year 2002
+        :weekday (e3 / end)))))
+ | reason: ["Multiple :instance triples for variable 'n' (name and nationwide)."]
+invalid AMR: 
+(h / have-03
+    :ARG0 (s / she)
+    :ARG1 (a / amr-choice
+        :op1 (h2 / history
+            :mod (d / disease-disorder :mod (m / mental)))
+        :op2 (d2 / diagnose-01 :ARG1 (d / disease-disorder :mod (m / mental))))
+    :polarity (a2 / amr-unknown)
+    :concession (e / even))
+ | reason: ["Multiple :instance triples for variable 'd' (disease-disorder and disease-disorder).", "Multiple :instance triples for variable 'm' (mental and mental)."]
+invalid AMR:  
+(s / state-01
+    :ARG0 (n / newspaper
+        :wiki "O_Estado_de_S._Paulo"
+        :name (n2 / name :op1 "O" :op2 "Estado" :op3 "de" :op4 "Sao" :op5 "Paulo")
+        :mod (d / daily))
+    :ARG1 (p / problem
+        :mod (e / extreme
+            :ARG1-of (r / raise-01
+                :ARG1 (m / measure)))
+        :mod (j / juridical :op1 (p2 / problem))
+        :mod (e2 / ethical :op1 (p3 / problem))
+        :ARG2-of (e3 / exceed-01
+            :ARG1 (b / benefit
+                :ARG1-of (p4 / potential)))
+    :location (e4 / editorial)
+    :time (d2 / date-interval
+        :op1 (d3 / date-entity :year 2004 :month 7 :day 18)
+        :op2 (d4 / date-entity :year 2004 :month 8 :day 24)))
+ | reason: ['PENMAN parse error: \n  line 19\n            :op2 (d4 / date-entity :year 2004 :month 8 :day 24)))\n                                                                 ^\nDecodeError: Unexpected end of input']
+
+Valid AMRs: 92.00% (46/50)
+
+Metrics (valid only)
+F1: 60.91 (CI: [57.13, 64.81])
+Precision: 56.74 (CI: [52.55, 61.16])
+Recall: 65.75 (CI: [61.79, 69.53])
+
+Optimization status:
+[(13.0, 13.0), (13.0, 13.0), (26.0, 26.0), (24.0, 24.0), (8.0, 8.0), (19.0, 19.0), (24.0, 24.0), (13.0, 13.0), (16.0, 16.0), (6.0, 6.0), (31.0, 31.0), (29.0, 29.0), (18.0, 18.0), (31.0, 31.0), (10.0, 10.0), (4.0, 4.0), (14.0, 14.0), (26.0, 26.0), (12.0, 12.0), (22.0, 22.0), (0.0, 0.0), (21.0, 21.0), (9.0, 9.0), (5.0, 5), (13.0, 13.0), (24.0, 24.0), (28.0, 28.0), (27.0, 27.0), (22.0, 22.0), (18.0, 18.0), (6.0, 6.0), (21.0, 21.0), (15.0, 15.0), (29.0, 29.0), (6.0, 6), (9.0, 9.0), (6.0, 6.0), (10.0, 10.0), (6.0, 6.0), (9.0, 9), (10.0, 10.0), (13.0, 13.0), (15.0, 15.0), (5.0, 5), (4.0, 4.0), (26.0, 26.0)]

@@ -1,0 +1,36 @@
+invalid AMR: (c / come-01
+      :ARG1 (v / visit-01
+            :ARG0 (p / person :wiki "Jacques_Chirac" :name (n / name :op1 "Jacques" :op2 "Chirac")))
+      :time (w / while
+            :op1 (d / display-01
+                  :ARG0 (g / government-organization
+                        :ARG0-of (g2 / govern-01
+                              :ARG1 (r / country :wiki "Russia" :name (n2 / name :op1 "Russia"))))
+                  :ARG1 (u / unease
+                        :topic (a / and
+                              :op1 (e / expand-01
+                                    :ARG0 (o1 / organization :wiki "NATO" :name (n3 / name :op1 "NATO"))
+                                    :destination (b / border :poss r)
+                                    :ARG1-of (l2 / late-02
+                                          :ARG1 e
+                                          :ARG2-of (h3 / have-degree-91
+                                                :ARG1 l2
+                                                :ARG2 (m / most))))
+                              :op2 (e2 / enlarge-01
+                                    :ARG0 (o2 / organization :wiki "European_Union" :name (n4 / name :op1 "European" :op2 "Union"))
+                                    :mod (i / imminent)
+                                    :location (s / sphere
+                                          :mod (f / former)
+                                          :ARG1-of (i2 / influence-01
+                                                :ARG0 (s2 / country :wiki "Soviet_Union" :name (n5 / name :op1 "Soviet" :op2 "Union")))
+                                          :location (r2 / region :wiki "Eastern_Europe" :name (n6 / name :op1 "Eastern" :op2 "Europe")))))))) | reason: ['PENMAN parse error: \n  line 26\n                                              :location (r2 / region :wiki "Eastern_Europe" :name (n6 / name :op1 "Eastern" :op2 "Europe"))))))))\n                                                                                                                                                 ^\nDecodeError: Unexpected end of input']
+
+Valid AMRs: 98.00% (49/50)
+
+Metrics (valid only)
+F1: 76.47 (CI: [72.05, 80.70])
+Precision: 76.25 (CI: [71.40, 80.54])
+Recall: 76.70 (CI: [71.88, 81.10])
+
+Optimization status:
+[(11.0, 11.0), (47.0, 47.0), (16.0, 16.0), (30.0, 30.0), (30.0, 30.0), (11.0, 11.0), (28.0, 28.0), (34.0, 34.0), (14.0, 14.0), (33.0, 33.0), (8.0, 8.0), (50.0, 50.0), (45.0, 45.0), (20.0, 20.0), (10.0, 10.0), (6.0, 6), (28.0, 28.0), (31.0, 31.0), (13.0, 13.0), (25.0, 25), (0.0, 0.0), (31.0, 31.0), (9.0, 9.0), (5.0, 5), (22.0, 22.0), (37.0, 37.0), (34.0, 34.0), (38.0, 38.0), (37.0, 37.0), (29.0, 29), (22.0, 22.0), (11.0, 11.0), (24.0, 24.0), (32.0, 32.0), (35.0, 35.0), (4.0, 4), (10.0, 10), (11.0, 11.0), (14.0, 14.0), (8.0, 8.0), (9.0, 9), (18.0, 18.0), (16.0, 16.0), (16.0, 16.0), (19.0, 19.0), (5.0, 5), (6.0, 6), (32.0, 32.0), (26.0, 26.0)]

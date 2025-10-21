@@ -1,0 +1,56 @@
+invalid AMR: (c / come-01
+      :ARG1 (v / visit-01
+            :ARG0 (p / person :wiki "Jacques_Chirac" :name (n / name :op1 "Jacques" :op2 "Chirac")))
+      :time (w / while
+            :op1 (d / display-01
+                  :ARG0 (g / government-organization
+                        :ARG0-of (g2 / govern-01
+                              :ARG1 (r / country :wiki "Russia" :name (n2 / name :op1 "Russia"))))
+                  :ARG1 (u / unease
+                        :topic (a / and
+                              :op1 (e / expand-01
+                                    :ARG1 (o1 / organization :wiki "NATO" :name (n3 / name :op1 "NATO"))
+                                    :mod (l / late-02
+                                          :degree (m / most))
+                                    :destination (b / border
+                                          :poss r))
+                              :op2 (e2 / enlarge-01
+                                    :ARG1 (o2 / organization :wiki "European_Union" :name (n4 / name :op1 "European" :op2 "Union"))
+                                    :mod (i / imminent)
+                                    :location (s / sphere
+                                          :mod (f / former)
+                                          :ARG1-of (i2 / influence-01
+                                                :ARG0 (s2 / country :wiki "Soviet_Union" :name (n5 / name :op1 "Soviet" :op2 "Union")))
+                                          :location (r2 / region :wiki "Eastern_Europe" :name (n6 / name :op1 "Eastern" :op2 "Europe")))))))) | reason: ['PENMAN parse error: \n  line 24\n                                              :location (r2 / region :wiki "Eastern_Europe" :name (n6 / name :op1 "Eastern" :op2 "Europe"))))))))\n                                                                                                                                                 ^\nDecodeError: Unexpected end of input']
+invalid AMR: (s / say-01
+      :ARG0 (p0 / police)
+      :ARG1 (k / kill-01
+            :ARG0 (m0 / mob
+                  :mod (t0 / tribal))
+            :ARG1 (p1 / person
+                  :quant (a0 / at-least :op1 3)
+                  :ARG0-of (m1 / member-01
+                        :ARG1 (f0 / family
+                              :location (s0 / state :wiki "Tripura"
+                                    :name (n0 / name :op1 "Tripura")
+                                    :part-of (c0 / country :wiki "India"
+                                          :name (n1 / name :op1 "India"))
+                                    :location (r0 / region
+                                          :mod (n2 / northeast)
+                                          :part-of c0))))
+            :manner (h0 / hack-01)
+            :cause (p3 / practice-01
+                  :ARG0 p1
+                  :ARG1 (w0 / witchcraft)
+                  :ARG1-of (a1 / allege-01)))
+      :time (d0 / date-entity :weekday (t1 / thursday))) | reason: ['PENMAN parse error: \n  line 22\n          :time (d0 / date-entity :weekday (t1 / thursday)))\n                                                            ^\nDecodeError: Unexpected end of input']
+
+Valid AMRs: 96.00% (48/50)
+
+Metrics (valid only)
+F1: 76.77 (CI: [72.19, 80.88])
+Precision: 75.96 (CI: [70.77, 80.35])
+Recall: 77.59 (CI: [72.88, 81.75])
+
+Optimization status:
+[(11.0, 11.0), (44.0, 44.0), (16.0, 16.0), (31.0, 31.0), (30.0, 30.0), (11.0, 11.0), (29.0, 29.0), (34.0, 34.0), (15.0, 15.0), (33.0, 33.0), (8.0, 8.0), (46.0, 46.0), (45.0, 45.0), (20.0, 20.0), (10.0, 10.0), (6.0, 6), (29.0, 29.0), (32.0, 32.0), (13.0, 13.0), (25.0, 25), (0.0, 0.0), (29.0, 29.0), (7.0, 7.0), (5.0, 5), (21.0, 21.0), (37.0, 37.0), (40.0, 40.0), (33.0, 33.0), (29.0, 29), (22.0, 22.0), (11.0, 11.0), (24.0, 24.0), (32.0, 32.0), (35.0, 35.0), (4.0, 4), (10.0, 10), (11.0, 11.0), (17.0, 17.0), (9.0, 9.0), (9.0, 9), (16.0, 16.0), (16.0, 16.0), (19.0, 19.0), (19.0, 19.0), (5.0, 5), (6.0, 6), (31.0, 31.0), (26.0, 26.0)]

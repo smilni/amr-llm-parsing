@@ -1,0 +1,48 @@
+invalid AMR: (v / visit-01
+  :ARG0 (p / person :wiki "Jacques_Chirac" :name (n / name :op1 "Chirac"))
+  :time (w / while
+            :op1 (d / display-01
+                     :ARG0 (g / government-organization
+                               :ARG0-of (g2 / govern-01
+                                            :ARG1 (c / country :wiki "Russia" :name (n2 / name :op1 "Russia"))))
+                     :ARG1 (u / uneasy-03
+                               :ARG1 g
+                               :topic (a / and
+                                          :op1 (e1 / expand-01
+                                                    :ARG0 (o / organization :wiki "NATO" :name (n3 / name :op1 "NATO"))
+                                                    :mod (l / late-02 :degree (m / most))
+                                                    :destination (b / border :part-of c))
+                                          :op2 (e2 / enlarge-01
+                                                    :ARG0 (o2 / organization :wiki "European_Union" :name (n4 / name :op1 "European" :op2 "Union"))
+                                                    :mod (i / imminent)
+                                                    :location (r / region
+                                                                 :mod (f / former)
+                                                                 :ARG1-of (i2 / influence-01
+                                                                              :ARG0 (c2 / country :wiki "Soviet_Union" :name (n5 / name :op1 "Soviet" :op2 "Union")))
+                                                                 :location (r2 / region :wiki "Eastern_Europe" :name (n6 / name :op1 "Eastern" :op2 "Europe")))))))) | reason: ['PENMAN parse error: \n  line 22\n                                                                     :location (r2 / region :wiki "Eastern_Europe" :name (n6 / name :op1 "Eastern" :op2 "Europe"))))))))\n                                                                                                                                                                        ^\nDecodeError: Unexpected end of input']
+invalid AMR: (c / contrast-01
+  :ARG1 (r / report-01
+            :ARG0 (a / agency
+                      :mod (n / news)
+                      :mod (c / country :wiki "Iran" :name (i / name :op1 "Iran")))
+            :ARG1 (s / say-01
+                      :ARG0 (p / person :wiki "Mahmoud_Ahmadinejad" :name (n2 / name :op1 "Ahmadinejad"))
+                      :ARG1 (h / have-03
+                                :ARG0 c
+                                :ARG1 (c2 / centrifuge :quant 6000
+                                            :ARG0-of (w / work-01)))))
+  :ARG2 (r2 / remove-01
+            :ARG0 a
+            :ARG1 s
+            :source (i2 / internet :wiki "Internet" :name (n3 / name :op1 "Internet"))
+            :time (a2 / after :op1 r))) | reason: ["Multiple :instance triples for variable 'c' (contrast-01 and country)."]
+
+Valid AMRs: 96.00% (48/50)
+
+Metrics (valid only)
+F1: 70.82 (CI: [66.45, 75.03])
+Precision: 68.68 (CI: [63.68, 73.45])
+Recall: 73.10 (CI: [68.54, 77.03])
+
+Optimization status:
+[(11.0, 11.0), (50.0, 50.0), (15.0, 15.0), (28.0, 28.0), (26.0, 26.0), (9.0, 9.0), (26.0, 26.0), (31.0, 31.0), (14.0, 14.0), (26.0, 26.0), (8.0, 8.0), (47.0, 47.0), (44.0, 44.0), (20.0, 20.0), (7.0, 7.0), (4.0, 4.0), (23.0, 23.0), (12.0, 12.0), (23.0, 23.0), (0.0, 0.0), (31.0, 31.0), (8.0, 8.0), (5.0, 5), (16.0, 16.0), (32.0, 32.0), (34.0, 34.0), (28.0, 28.0), (30.0, 30.0), (22.0, 22.0), (24.0, 24.0), (5.0, 5.0), (26.0, 26.0), (22.0, 22.0), (31.0, 31.0), (6.0, 6), (9.0, 9.0), (10.0, 10.0), (9.0, 9.0), (8.0, 8.0), (9.0, 9.0), (14.0, 14.0), (15.0, 15.0), (19.0, 19.0), (21.0, 21.0), (5.0, 5), (4.0, 4.0), (31.0, 31.0), (23.0, 23.0)]

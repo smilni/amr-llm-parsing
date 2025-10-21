@@ -1,0 +1,9 @@
+amrlib
+openai
+penman
+smatchpp
+faiss-cpu
+sentence-transformers
+langgraph
+langchain_openai
+mip==1.16rc0

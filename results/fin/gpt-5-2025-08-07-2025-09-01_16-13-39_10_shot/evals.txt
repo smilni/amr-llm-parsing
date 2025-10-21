@@ -1,0 +1,213 @@
+invalid AMR: AMR graph:(s / state-01
+      :ARG0 (o / official
+            :mod (m / maritime)
+            :location (c / country :wiki "Kenya"
+                  :name (n / name :op1 "Kenya")))
+      :ARG1 (a / agree-01
+            :ARG1 (d / detail
+                  :mod (c2 / critical))
+            :polarity -
+            :time (b / before
+                  :op1 (n2 / now)))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(s / state-01\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: (s / say-01
+      :ARG0 (a / and
+            :op1 (c1 / country :wiki "China"
+                  :name (n1 / name :op1 "China"))
+            :op2 (c2 / country :wiki "Kyrgyzstan"
+                  :name (n2 / name :op1 "Kyrgyzstan")))
+      :location (c3 / communique)
+      :ARG1 (r / recommend-01
+            :ARG0 a
+            :ARG1 (e / establish-01
+                  :ARG1 (a2 / and
+                        :op1 (p / peace)
+                        :op2 (s2 / stability)
+                        :op3 (o / order
+                              :mod (w / world)
+                              :mod (a3 / and
+                                    :op1 (p2 / political)
+                                    :op2 (e2 / economic))
+                              :mod (a4 / and
+                                    :op1 (j / just)
+                                    :op2 (r2 / rational)))
+                        :ARG1-of (b / base-02
+                              :ARG2 (a5 / and
+                                    :op1 (d / document :wiki "Charter_of_the_United_Nations"
+                                          :name (n3 / name :op1 "UN" :op2 "Charter"))
+                                    :op2 (n4 / norm
+                                          :topic (l / law
+                                                :mod (i / international)))
+                                    :op3 (p3 / principle
+                                          :topic l)))))) | reason: ['PENMAN parse error: \n  line 30\n                                              :topic l))))))\n                                                            ^\nDecodeError: Unexpected end of input']
+invalid AMR: AMR graph:(s / show-01
+      :ARG0 (i / image
+            :mod (s2 / satellite)
+            :ARG1-of (p / publish-01
+                  :ARG0 (o / organization :wiki "Institute_for_Science_and_International_Security"
+                        :name (n / name :op1 "Institute" :op2 "for" :op3 "Science" :op4 "and" :op5 "International" :op6 "Security"))))
+      :ARG1 (p2 / progress-01
+            :ARG1 (c / construct-01
+                  :location (f / facility
+                        :mod (r / reactor)
+                        :mod (r2 / research)
+                        :mod (w / water
+                              :mod (h / heavy))
+                        :location (n2 / near
+                              :op1 (c2 / city
+                                    :name (n3 / name :op1 "Arak")))))
+            :degree (s3 / significant)
+            :time (b / between
+                  :op1 (d1 / date-entity :value "080200")
+                  :op2 (d2 / date-entity :value "081000")))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(s / show-01\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(c / conduit
+      :mod (i / important)
+      :domain (r / region
+            :name (n / name :op1 "Caucus" :op2 "region"))
+      :purpose (f / flow-01
+            :ARG1 (o / oil)
+            :source (s / sea
+                  :wiki "Caspian_Sea"
+                  :name (n2 / name :op1 "Caspian" :op2 "Sea"))
+            :destination (m / market
+                  :mod (w / world)))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(c / conduit\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: (c / come-01
+      :ARG1 (v / visit-01
+            :ARG0 (p / person :wiki "Jacques_Chirac"
+                  :name (n / name :op1 "Chirac")))
+      :time (w / while
+            :op1 (d / display-01
+                  :ARG0 (g / government-organization
+                        :mod (r / country :wiki "Russia"
+                              :name (n2 / name :op1 "Russia")))
+                  :ARG1 (u / uneasiness
+                        :topic (a / and
+                              :op1 (e / expand-01
+                                    :ARG0 (o / organization :wiki "NATO"
+                                          :name (n3 / name :op1 "NATO"))
+                                    :destination (b / border
+                                          :poss r)
+                                    :mod (l / late
+                                          :degree (m / most)))
+                              :op2 (e2 / enlarge-01
+                                    :ARG0 (o2 / organization :wiki "European_Union"
+                                          :name (n4 / name :op1 "European" :op2 "Union"))
+                                    :mod (i / imminent)
+                                    :location (s / sphere
+                                          :mod (i2 / influence)
+                                          :poss (c2 / country :wiki "Soviet_Union"
+                                                :name (n5 / name :op1 "Soviet" :op2 "Union"))
+                                          :mod (f / former)
+                                          :location (r2 / region :wiki "Eastern_Europe"
+                                                :name (n6 / name :op1 "Eastern" :op2 "Europe")))))))) | reason: ['PENMAN parse error: \n  line 29\n                                                    :name (n6 / name :op1 "Eastern" :op2 "Europe"))))))))\n                                                                                                         ^\nDecodeError: Unexpected end of input']
+invalid AMR: AMR graph:(m / make-available-01
+      :ARG1 (l / list)
+      :condition (i / identify-01
+            :polarity -
+            :ARG1 (o / or
+                  :op1 (d / diplomat)
+                  :op2 (c / country :poss d)))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(m / make-available-01\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(a0 / and
+      :op1 (r / report-01
+            :ARG0 (a / agency
+                  :mod (n / news)
+                  :mod (c / country :wiki "Iran"
+                        :name (n2 / name :op1 "Iran")))
+            :ARG1 (s / state-01
+                  :ARG0 (p / person :wiki "Mahmoud_Ahmadinejad"
+                        :name (n3 / name :op1 "Ahmadinejad"))
+                  :ARG1 (h / have-03
+                        :ARG0 (c2 / country :wiki "Iran"
+                              :name (n4 / name :op1 "Iran"))
+                        :ARG1 (c3 / centrifuge
+                              :quant 6000
+                              :ARG1-of (w / work-01)))))
+      :op2 (r2 / remove-01
+            :ARG0 a
+            :ARG1 s
+            :ARG2 (i / internet :wiki "Internet"
+                  :name (n5 / name :op1 "Internet"))
+            :time (a2 / after
+                  :op1 r))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(a0 / and\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(a / and
+      :op1 (h / have-rel-role-91
+            :ARG0 (c / country :wiki "Iran"
+                  :name (n / name :op1 "Iran"))
+            :ARG1 (s / signatory)
+            :ARG2 (t / treaty :wiki "Treaty_on_the_Non-Proliferation_of_Nuclear_Weapons"
+                  :name (n2 / name :op1 "Nuclear" :op2 "Nonproliferation" :op3 "Treaty")))
+      :op2 (h2 / have-org-role-91
+            :ARG0 c
+            :ARG1 (o / organization :wiki "Nuclear_Suppliers_Group"
+                  :name (n3 / name :op1 "Nuclear" :op2 "Suppliers" :op3 "Group"))
+            :ARG2 (m / member)
+            :polarity -)) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(a / and\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(r / report-01
+      :ARG0 (p / person
+            :name (n / name :op1 "Shuifu" :op2 "Tang")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (o / organization :wiki "Xinhua_News_Agency"
+                        :name (n2 / name :op1 "Xinhua" :op2 "News" :op3 "Agency"))
+                  :ARG2 (r2 / reporter)))
+      :source o
+      :location (c / city :wiki "Seoul"
+            :name (n3 / name :op1 "Seoul"))
+      :time (d / date-entity :month 8 :day 31)) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(r / report-01\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(c / cause-01
+      :ARG0 (a / amr-unknown)
+      :ARG1 (d / difficult-02
+            :degree (s / so)
+            :domain (u / understand-01
+                  :ARG0 (p / person)
+                  :ARG1 (i / it)))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(c / cause-01\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(n1 / normal-02
+      :domain (a1 / and
+            :op1 (p1 / person
+                  :ARG0-of (p2 / prostitute-01)
+                  :mod (h1 / heartless))
+            :op2 (p3 / person
+                  :ARG0-of (p4 / perform-01)
+                  :mod (u1 / unrighteous))
+            :time (a2 / always))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(n1 / normal-02\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(r / recall-01
+      :ARG0 (h / he)
+      :ARG1 (a / alive-01
+            :ARG1 h
+            :mod (a2 / alone)
+            :time (w / when
+                  :op1 (s / sweep-01
+                        :ARG1 (p / parent
+                              :poss h)
+                        :ARG0 (w2 / wave
+                              :mod (t2 / tidal))
+                        :direction (a3 / away)
+                        :time (b / begin-01
+                              :ARG1 (t / tragedy)))))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(r / recall-01\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(t / think-01
+      :polarity -
+      :ARG0 (i / i)
+      :ARG1 (p / possible-01
+            :ARG1 (b / blame-01
+                  :ARG0 (y / you)
+                  :ARG1 (p2 / person
+                        :name (n / name :op1 "288"))
+                  :ARG2 (c / create-01
+                        :ARG0 p2
+                        :ARG1 (p3 / person
+                              :mod (t2 / those)))))) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(t / think-01\n    ^\nDecodeError: Expected: LPAREN']
+invalid AMR: AMR graph:(d / date-entity
+      :year 2010
+      :month 9
+      :day 2
+      :time (t / time-of-day
+            :hour 13
+            :minute 25)) | reason: ['PENMAN parse error: \n  line 1\n    AMR graph:(d / date-entity\n    ^\nDecodeError: Expected: LPAREN']
+
+Valid AMRs: 72.00% (36/50)
+
+Metrics (valid only)
+F1: 69.18 (CI: [64.59, 73.47])
+Precision: 66.77 (CI: [61.94, 71.21])
+Recall: 71.78 (CI: [66.26, 76.16])
+
+Optimization status:
+[(42.0, 42.0), (15.0, 15.0), (31.0, 31.0), (26.0, 26.0), (10.0, 10.0), (25.0, 25.0), (25.0, 25.0), (15.0, 15.0), (25.0, 25.0), (8.0, 8.0), (4.0, 4.0), (24.0, 24.0), (12.0, 12.0), (23.0, 23.0), (0.0, 0.0), (8.0, 8.0), (5.0, 5), (15.0, 15.0), (31.0, 31.0), (33.0, 33.0), (29.0, 29.0), (25.0, 25.0), (20.0, 20.0), (28.0, 28.0), (18.0, 18.0), (29.0, 29.0), (6.0, 6), (9.0, 9.0), (11.0, 11.0), (8.0, 8.0), (10.0, 10), (14.0, 14.0), (22.0, 22.0), (5.0, 5), (33.0, 33.0), (25.0, 25.0)]

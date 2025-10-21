@@ -1,0 +1,1163 @@
+	sentence	gold_amr	generated_amr
+0	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Maritime officials in Kenya stated that critical details have yet to be agreed upon.
+AMR graph:"	"(s / state-01
+      :ARG0 (o / official
+            :topic (m / maritime)
+            :location (c / country :wiki ""Kenya"" :name (n / name :op1 ""Kenya"")))
+      :ARG1 (h / have-11
+            :ARG1 (y / yet)
+            :ARG2 (a / agree-01
+                  :ARG1 (d / detail-01
+                        :ARG1-of (c2 / critical-02)))))"	"(s1 / say-01
+      :ARG0 (o1 / official
+                :mod (m1 / maritime)
+                :location (c1 / country
+                              :name (n1 / name :op1 ""Kenya"")))
+      :ARG1 (n2 / not-yet-91
+                 :ARG1 (a1 / agree-01
+                            :ARG1 (d1 / detail
+                                       :mod (c2 / critical)))))"
+1	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: United Nations arms inspectors on December 28, 2002 visited 7 sites in Iraq in order to search for prohibited weapons of mass destruction according to spokesman Hiro Ueki.
+AMR graph:"	"(s / say-01
+      :ARG0 (p3 / person :wiki -
+            :name (n / name :op1 ""Hiro"" :op2 ""Ueki"")
+            :ARG0-of (h2 / have-org-role-91
+                  :ARG2 (s2 / spokesman)))
+      :ARG1 (v / visit-01
+            :ARG0 (p / person
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (o / organization :wiki ""United_Nations""
+                              :name (n2 / name :op1 ""United"" :op2 ""Nations""))
+                        :ARG3 (i / inspect-01
+                              :ARG0 p
+                              :ARG1 (a / arm))))
+            :ARG1 (s3 / site :quant 7
+                  :location (c / country :wiki ""Iraq""
+                        :name (n3 / name :op1 ""Iraq"")))
+            :time (d / date-entity :month 12 :day 28 :year 2002)
+            :purpose (s4 / search-01
+                  :ARG0 p
+                  :ARG2 (w / weapon
+                        :ARG0-of (d2 / destroy-01
+                              :degree (m / mass))
+                        :ARG1-of (p2 / prohibit-01)))))"	"(s0 / say-01
+  :ARG0 (p0 / person
+        :name (n0 / name :op1 ""Hiro"" :op2 ""Ueki"")
+        :ARG2-of (h2 / have-org-role-91
+                  :ARG2 (s3 / spokesman)))
+  :ARG1 (v0 / visit-01
+        :ARG0 (g0 / group
+              :ARG0-of (h0 / have-org-role-91
+                        :ARG1 (u0 / organization
+                              :name (n1 / name :op1 ""United"" :op2 ""Nations""))
+                        :ARG2 (i3 / inspector
+                              :mod (w3 / weapon))))
+        :ARG1 (s1 / site
+              :quant 7
+              :location (c0 / country
+                        :name (n2 / name :op1 ""Iraq"")))
+        :time (d0 / date-entity
+              :year 2002
+              :month 12
+              :day 28)
+        :purpose (s2 / search-01
+              :ARG0 g0
+              :ARG1 (w0 / weapon-of-mass-destruction
+                    :ARG1-of (p1 / prohibit-01)))))"
+2	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: SUPPLIES WE NEED: comfortable nursing chairs and rockers, nursing foot stool, boppie, SLINGS and baby clothes, diapers.
+AMR graph:"	"(n / need-01
+      :ARG0 (w / we)
+      :ARG1 (s / supply-01
+            :example (c / chair
+                  :mod (n2 / nursing)
+                  :ARG0-of (c2 / comfortable-02))
+            :example (r / rocker)
+            :example (s2 / stool
+                  :mod (f / foot)
+                  :mod n2)
+            :example (b / boppie)
+            :example (s3 / sling)
+            :example (c3 / cloth
+                  :mod (b2 / baby))
+            :example (d / diaper)))"	"(n0 / need-01
+  :ARG0 (w0 / we)
+  :ARG1 (a0 / and
+    :op1 (a1 / and
+      :op1 (c1 / chair
+        :mod (c2 / comfortable)
+        :purpose (n1 / nurse-01))
+      :op2 (r1 / rocker
+        :mod c2
+        :purpose n1))
+    :op2 (f1 / footstool
+      :purpose n1)
+    :op3 (b3 / thing
+      :name (n3 / name :op1 ""boppie""))
+    :op4 (s2 / sling)
+    :op5 (c4 / clothes
+      :mod (b4 / baby))
+    :op6 (d1 / diaper)))"
+3	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: My fellow citizens, of the heinous crimes committed by Japan in China, there are too many instances to cite, difficult to record without exhausting all bamboo strips.
+AMR graph:"	"(s / say-01
+      :ARG0 (i2 / i)
+      :ARG1 (h2 / have-quant-91
+            :ARG1 (i / instance
+                  :ARG1-of (r / record-01
+                        :manner (d / difficult)
+                        :manner (e / exhaust-01 :polarity -
+                              :ARG1 (s2 / strip
+                                    :consist-of (b / bamboo)
+                                    :mod (a / all)))))
+            :ARG2 (m2 / many)
+            :ARG3 (t / too)
+            :ARG6 (p / possible-01 :polarity -
+                  :ARG1 (c6 / cite-01
+                        :ARG1 i))
+            :topic (c2 / crime-02
+                  :ARG1 (h / heinous)
+                  :ARG1-of (c3 / commit-02
+                        :ARG0 (c4 / country :wiki ""Japan"" :name (n / name :op1 ""Japan""))
+                        :location (c5 / country :wiki ""China"" :name (n2 / name :op1 ""China"")))))
+      :ARG2 (c / citizen
+            :mod (f / fellow)
+            :poss i2))"	
+4	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Shortly after the freighter was hijacked on 25 September 2008 the Kenyan government claimed that the weapons on board were being shipped for Kenya's military.
+AMR graph:"	"(c / claim-01
+      :ARG0 (g / government-organization
+            :ARG0-of (g2 / govern-01
+                  :ARG1 (c2 / country :wiki ""Kenya"" :name (n / name :op1 ""Kenya""))))
+      :ARG1 (s / ship-01
+            :ARG1 (w / weapon
+                  :ARG0-of (b / board-01))
+            :ARG2 (m / military
+                  :poss c2))
+      :time (a / after
+            :op1 (h / hijack-01
+                  :ARG1 (f / freighter)
+                  :time (d / date-entity :year 2008 :month 9 :day 25))
+            :ARG1-of (s2 / short-07)))"	"(c / claim-01
+  :ARG0 (g / government-organization
+            :poss (k / country
+                      :name (n / name :op1 ""Kenya"")))
+  :time (a1 / after
+            :op1 (h / hijack-01
+                      :ARG1 (f / freighter)
+                      :time (d / date-entity :year 2008 :month 9 :day 25))
+            :mod (s2 / short))
+  :ARG1 (s / ship-01
+            :ARG1 (w / weapon
+                      :location (a2 / aboard :op1 f))
+            :beneficiary (m / military :poss k)))"
+5	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: ""Qatar is a very important country on this issue.
+AMR graph:"	"(c2 / country
+      :ARG1-of (i2 / important-01
+            :ARG2 (i3 / issue-02
+                  :mod (t2 / this))
+            :degree (v / very))
+      :domain (c / country :wiki ""Qatar"" :name (n / name :op1 ""Qatar"")))"	"(c1 / country
+   :name (n1 / name :op1 ""Qatar"")
+   :mod (i1 / important-01
+            :ARG1 c1
+            :degree (v1 / very)
+            :topic (i2 / issue
+                       :mod (t1 / this))))"
+6	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Peruvian military document discloses former intelligence head Montesinos' links with drug trafficking
+AMR graph:"	"(d / disclose-01
+      :ARG0 (d2 / document
+            :mod (m / military
+                  :mod (c / country :wiki ""Peru"" :name (n / name :op1 ""Peru""))))
+      :ARG1 (l / link-01
+            :ARG1 (p / person :wiki ""Vladimiro_Montesinos"" :name (n2 / name :op1 ""Montesinos"")
+                  :ARG0-of (h / head-01
+                        :ARG1 (i / intelligence)
+                        :time (f / former)))
+            :ARG2 (t / traffic-01
+                  :ARG1 (d3 / drug))))"	"(d1 / disclose-01
+  :ARG0 (d2 / document
+        :poss (m1 / military-organization
+              :mod (c1 / country
+                    :name (n1 / name :op1 ""Peru""))))
+  :ARG1 (l1 / link-01
+        :ARG1 (p1 / person
+              :name (n2 / name :op1 ""Montesinos"")
+              :ARG0-of (h1 / have-org-role-91
+                    :ARG1 (o1 / organization
+                          :mod (i1 / intelligence))
+                    :ARG2 (h2 / head)
+                    :time (b1 / before)))
+        :ARG2 (t1 / traffic-01
+              :ARG1 (d3 / drug))))"
+7	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Premier Peng Li and Kirghizian President Akayev attended the signing ceremony .
+AMR graph:"	"(a2 / attend-01
+      :ARG0 (a3 / and
+            :op1 (p / person :wiki ""Li_Peng""
+                  :name (n2 / name :op1 ""Peng"" :op2 ""Li"")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG2 (p2 / premier)))
+            :op2 (p3 / person :wiki ""Askar_Akayev""
+                  :name (n3 / name :op1 ""Akayev"")
+                  :ARG0-of (h2 / have-org-role-91
+                        :ARG1 (c / country :wiki ""Kyrgyzstan""
+                              :name (n4 / name :op1 ""Kirghizia""))
+                        :ARG2 (p4 / president))))
+      :ARG1 (c2 / ceremony
+            :mod (s / sign-01)))"	"(a1 / attend-01
+  :ARG0 (a2 / and
+    :op1 (p1 / person
+          :name (n1 / name :op1 ""Peng"" :op2 ""Li"")
+          :ARG0-of (h1 / have-org-role-91
+                    :ARG2 (r1 / premier)))
+    :op2 (p2 / person
+          :name (n2 / name :op1 ""Akayev"")
+          :ARG0-of (h2 / have-org-role-91
+                    :ARG2 (r2 / president))
+          :mod (k1 / kirghizian)))
+  :ARG1 (c1 / ceremony
+        :purpose (s1 / sign-01)))"
+8	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: No casualties have been reported as the primary school had no classes over the weekend.
+AMR graph:"	"(c / cause-01
+      :ARG0 (h / have-03 :polarity -
+            :ARG0 (s / school
+                  :mod (p / primary))
+            :ARG1 (c3 / class)
+            :time (w / weekend))
+      :ARG1 (r / report-01 :polarity -
+            :ARG1 (c2 / casualty)))"	"(a / cause-01
+  :ARG1 (r / report-01
+        :ARG1 (c1 / casualty
+              :quant 0))
+  :ARG0 (h / have-03
+        :ARG0 (s / school
+              :mod (p / primary))
+        :ARG1 (c2 / class)
+        :polarity -
+        :time (w / weekend)))"
+9	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The People's Mujahedeen accused the French authorities of carrying out the operation as part of a deal with the Iranian government.
+AMR graph:"	"(a / accuse-01
+      :ARG0 (o / organization :wiki ""People's_Mujahedin_of_Iran"" :name (n / name :op1 ""People's"" :op2 ""Mujahedeen""))
+      :ARG1 (a2 / authority
+            :mod (c / country :wiki ""France"" :name (n2 / name :op1 ""France"")))
+      :ARG2 (h / have-part-91
+            :ARG1 (d / deal-01
+                  :ARG0 a2
+                  :ARG1 (g / government-organization
+                        :ARG0-of (g2 / govern-01
+                              :ARG1 (c3 / country :wiki ""Iran"" :name (n3 / name :op1 ""Iran"")))))
+            :ARG2 (c2 / carry-out-03
+                  :ARG0 a2
+                  :ARG1 (o2 / operation))))"	"(a0 / accuse-01
+  :ARG0 (o0 / organization
+        :name (n0 / name :op1 ""People's"" :op2 ""Mujahedeen""))
+  :ARG1 (a1 / authority
+        :mod (c0 / country :name (n1 / name :op1 ""France"")))
+  :ARG2 (c1 / carry-out-03
+        :ARG0 a1
+        :ARG1 (o1 / operation)
+        :part-of (a2 / agree-01
+              :ARG0 a1
+              :ARG1 (g0 / government-organization
+                    :mod (c2 / country :name (n2 / name :op1 ""Iran""))))))"
+10	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Both take what they need
+AMR graph:"	"(t / take-01
+      :ARG0 (b / both)
+      :ARG1 (t2 / thing
+            :ARG1-of (n / need-01
+                  :ARG0 b)))"	"(t1 / take-01
+      :ARG0 (p1 / person
+                 :quant 2)
+      :ARG1 (t2 / thing
+                 :ARG1-of (n1 / need-01
+                                :ARG0 p1)))"
+11	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: China and Kyrgyzstan said in the communique that peace, stability and a just and rational world political and economic order should be established on the basis of the UN Charter and norms and principles of international law.
+AMR graph:"	"(s / say-01
+      :ARG0 (a / and
+            :op1 (c / country :wiki ""China"" :name (n / name :op1 ""China""))
+            :op2 (c2 / country :wiki ""Kyrgyzstan"" :name (n2 / name :op1 ""Kyrgyzstan"")))
+      :ARG1 (r / recommend-01
+            :ARG1 (e / establish-01
+                  :ARG1 (a2 / and
+                        :op1 (p / peace)
+                        :op2 (s2 / stability)
+                        :op3 (a6 / and
+                              :op1 (o / order
+                                    :mod (p2 / politics))
+                              :op2 (o2 / order
+                                    :mod (e2 / economy))
+                              :mod (w / world
+                                    :ARG0-of (j / just-02)
+                                    :mod (r2 / rational))))
+                  :ARG1-of (b / base-02
+                        :ARG2 (a5 / and
+                              :op1 (t / treaty :wiki ""United_Nations_Charter"" :name (n3 / name :op1 ""UN"" :op2 ""Charter""))
+                              :op2 (n4 / norm
+                                    :poss (l / law
+                                          :mod (i / international)))
+                              :op3 (p3 / principle
+                                    :poss l)))))
+      :medium (c3 / communique))"	"(s0 / say-01
+  :ARG0 (a0 / and
+    :op1 (c1 / country :name (n1 / name :op1 ""China""))
+    :op2 (c2 / country :name (n2 / name :op1 ""Kyrgyzstan"")))
+  :ARG1 (e1 / establish-01
+    :ARG1 (a1 / and
+      :op1 (p1 / peace)
+      :op2 (s2 / stability)
+      :op3 (o1 / order
+        :mod (j1 / just-02)
+        :mod (r1 / rational-01)
+        :mod (w1 / world)
+        :mod (p3 / political)
+        :mod (e2 / economic)
+        :ARG1-of (b1 / base-02
+          :ARG2 (a2 / and
+            :op1 (c3 / charter
+              :poss (o3 / organization :name (n3 / name :op1 ""UN"")))
+            :op2 (n4 / norm
+              :topic (l1 / law :mod (i1 / international)))
+            :op3 (p4 / principle
+              :topic l1))))))
+  :medium (m1 / communique)
+  :mode should)"
+12	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Satellite images published by the Institute for Science and International Security show construction at the heavy-water research reactor facility near the city of Arak has progressed significantly between 080200 and 081000.
+AMR graph:"	"(s / show-01
+      :ARG0 (i / image
+            :source (s2 / satellite)
+            :ARG1-of (p / publish-01
+                  :ARG0 (o / organization :wiki ""Institute_for_Science_and_International_Security"" :name (n / name :op1 ""Institute"" :op2 ""for"" :op3 ""Science"" :op4 ""and"" :op5 ""International"" :op6 ""Security""))))
+      :ARG1 (p2 / progress-01
+            :ARG1 (c / construct-01
+                  :ARG1 (f / facility
+                        :mod (r2 / reactor
+                              :purpose (r3 / research-01)
+                              :mod (w / water
+                                    :mod (h / heavy)))
+                        :ARG1-of (n2 / near-02
+                              :ARG2 (c2 / city :wiki ""Arak,_Iran"" :name (n3 / name :op1 ""Arak"")))))
+            :ARG1-of (s3 / significant-02)
+            :time (d3 / date-interval
+                  :op1 (d / date-entity :month 2 :year 2008)
+                  :op2 (d2 / date-entity :month 10 :year 2008))))"	"(s1 / show-01
+  :ARG0 (i1 / image
+        :mod (s2 / satellite)
+        :ARG1-of (p1 / publish-01
+                  :ARG0 (o1 / organization
+                        :name (n1 / name :op1 ""Institute"" :op2 ""for"" :op3 ""Science"" :op4 ""and"" :op5 ""International"" :op6 ""Security""))))
+  :ARG1 (p2 / progress-01
+        :ARG1 (b1 / build-01
+              :location (f1 / facility
+                        :purpose (r1 / reactor
+                                  :mod (r2 / research)
+                                  :mod (w1 / water
+                                        :mod (h1 / heavy)))
+                        :location (n2 / near-02
+                                  :ARG1 f1
+                                  :ARG2 (c1 / city
+                                        :name (n3 / name :op1 ""Arak"")))))
+        :degree (s3 / significant)
+        :time (b2 / between
+              :op1 (d1 / date-entity :value ""080200"")
+              :op2 (d2 / date-entity :value ""081000""))))"
+13	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The Caucus region is an important conduit for the flow of oil from the Caspian Sea to world markets.
+AMR graph:"	"(c / conduit
+      :domain (w / world-region :wiki ""Caucasus"" :name (n / name :op1 ""Caucasus""))
+      :ARG1-of (i / important-01)
+      :purpose (f / flow-01
+            :ARG1 (o / oil)
+            :source (s / sea :wiki ""Caspian_Sea"" :name (n2 / name :op1 ""Caspian"" :op2 ""Sea""))
+            :destination (m / market
+                  :mod (w2 / world))))"	"(c1 / conduit
+      :mod (i1 / important)
+      :domain (r1 / region
+                  :name (n1 / name :op1 ""Caucus""))
+      :purpose (f1 / flow-01
+                   :ARG1 (o1 / oil)
+                   :source (s1 / sea
+                               :name (n2 / name :op1 ""Caspian"" :op2 ""Sea""))
+                   :destination (m1 / market
+                                   :mod (w1 / world))))"
+14	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Chirac's visit has come while the Russian Government has displayed uneasiness about NATO's latest expansion to the Russian borders and the European Union's imminent enlargement within the former Soviet sphere of influence in Eastern Europe.
+AMR graph:"	"(v2 / visit-01
+      :ARG0 (p / person :wiki ""Jacques_Chirac"" :name (n / name :op1 ""Chirac""))
+      :time (d / display-01
+            :ARG0 (g / government-organization
+                  :ARG0-of (g2 / govern-01
+                        :ARG1 (c2 / country :wiki ""Russia"" :name (n2 / name :op1 ""Russia""))))
+            :ARG1 (u / uneasy-01
+                  :ARG1 g
+                  :ARG2 (a / and
+                        :op1 (e / expand-01
+                              :ARG1 (m / military :wiki ""NATO"" :name (n3 / name :op1 ""NATO""))
+                              :ARG4 (b / border-01
+                                    :ARG2 c2)
+                              :mod (l / last))
+                        :op2 (e2 / enlarge-01
+                              :ARG1 (o2 / organization :wiki ""European_Union"" :name (n4 / name :op1 ""European"" :op2 ""Union""))
+                              :ARG2 (s / sphere
+                                    :mod (c / country :wiki ""Soviet_Union"" :name (n5 / name :op1 ""Soviet"" :op2 ""Union""))
+                                    :ARG1-of (i / influence-01)
+                                    :location (w2 / world-region :wiki ""Eastern_Europe"" :name (n6 / name :op1 ""Eastern"" :op2 ""Europe""))
+                                    :time (f / former))
+                              :mod (i2 / imminent))))))"	
+15	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The list was made available on condition that neither the diplomat nor the diplomat's country be identified.
+AMR graph:"	"(a3 / avail-01
+      :ARG2 (l / list)
+      :ARG1-of (c / condition-01
+            :ARG2 (i / identify-01 :polarity -
+                  :ARG1 (a2 / and
+                        :op1 (p / person
+                              :ARG0-of (h / have-org-role-91
+                                    :ARG2 (d / diplomat)))
+                        :op2 (c2 / country
+                              :source-of p)))))"	"(m / available-02
+  :ARG1 (l / list)
+  :condition (a / and
+    :op1 (i1 / identify-01
+      :ARG1 (d / diplomat)
+      :polarity -)
+    :op2 (i2 / identify-01
+      :ARG1 (c / country
+        :poss d)
+      :polarity -)))"
+16	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: 08/02/2010 13:52
+AMR graph:"	"(d / date-entity :time ""13:52"" :day 8 :year 2010 :month 2)"	"(d1 / date-entity
+      :month 8
+      :day 2
+      :year 2010
+      :time (t1 / time-entity
+                 :hour 13
+                 :minute 52))"
+17	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Sheng Chen , who is 19 years old this year , from Hubei , is temporarily in the sixth position , the a total score of 342.60 points .
+AMR graph:"	"(p / position-01
+      :ARG1 (p3 / person :wiki - :name (n / name :op1 ""Sheng"" :op2 ""Chen"")
+            :source (p4 / province :wiki ""Hubei"" :name (n2 / name :op1 ""Hubei""))
+            :ARG1-of (s2 / score-01
+                  :ARG2 (p2 / point :quant 342.60)
+                  :mod (t3 / total))
+            :ARG1-of (a / age-01
+                  :ARG2 (t / temporal-quantity :quant 19
+                        :unit (y / year))
+                  :time (y2 / year
+                        :mod (t4 / this))))
+      :ord (o / ordinal-entity :value 6)
+      :duration (t2 / temporary))"	"(a1 / and
+      :op1 (r1 / rank-01
+                :ARG1 (p1 / person
+                          :name (n1 / name :op1 ""Sheng"" :op2 ""Chen""))
+                :ARG2 (o1 / ordinal-entity :value 6)
+                :manner (t1 / temporary)
+                :time (n2 / now))
+      :op2 (a2 / age-01
+                :ARG1 p1
+                :ARG2 (tq1 / temporal-quantity
+                          :quant 19
+                          :unit (y1 / year))
+                :time (y2 / year :mod (t2 / this)))
+      :op3 (o2 / originate-01
+                :ARG1 p1
+                :ARG2 (h1 / province
+                          :name (n3 / name :op1 ""Hubei"")))
+      :op4 (s1 / score-01
+                :ARG1 p1
+                :ARG2 (q1 / quantity
+                          :quant 342.60
+                          :unit (p2 / point))
+                :mod (t3 / total)))"
+18	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: An Iranian news agency reported that ahmadinejad stated Iran had 6000 working centrifuges but the agency subsequently removed the statement from the Internet.
+AMR graph:"	"(r / report-01
+      :ARG0 (a / agency
+            :mod (n / news)
+            :mod (c / country :wiki ""Iran"" :name (n2 / name :op1 ""Iran"")))
+      :ARG1 (s / state-01
+            :ARG0 (p / person :wiki ""Mahmoud_Ahmadinejad"" :name (n3 / name :op1 ""Ahmadinejad""))
+            :ARG1 (h / have-03
+                  :ARG0 c
+                  :ARG1 (c2 / centrifuge :quant 6000
+                        :ARG1-of (w / work-09))))
+      :concession-of (r2 / remove-01
+            :ARG0 a
+            :ARG1 s
+            :ARG2 (i / internet)
+            :time (s2 / subsequent)))"	"(a / and
+  :op1 (r / report-01
+        :ARG0 (a1 / agency
+              :mod (n / news)
+              :mod (i / country
+                    :name (n1 / name :op1 ""Iran"")))
+        :ARG1 (s / say-01
+              :ARG0 (p / person
+                    :name (n2 / name :op1 ""Ahmadinejad""))
+              :ARG1 (h / have-03
+                    :ARG0 i
+                    :ARG1 (c / centrifuge
+                          :quant (q / 6000)
+                          :ARG1-of (f / function-01)))))
+  :op2 (r2 / remove-01
+        :ARG0 a1
+        :ARG1 (s2 / statement :content s)
+        :source (i2 / internet)
+        :time (a2 / after :op1 r)))"
+19	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: What can you do to help us, please?
+AMR graph:"	"(p / possible-01 :polite +
+      :ARG1 (d / do-02
+            :ARG0 (y / you)
+            :ARG1 (a / amr-unknown)
+            :purpose (h / help-01
+                  :ARG0 y
+                  :ARG2 (w / we))))"	"(a1 / able-01
+  :ARG0 (y1 / you)
+  :ARG1 (d1 / do-02
+    :ARG0 y1
+    :ARG1 (x1 / amr-unknown)
+    :purpose (h1 / help-01
+      :ARG0 y1
+      :ARG1 (w1 / we))))"
+20	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Senior Fellow at the International Institute for Strategic Studies mark Fitzpatrick stated that --
+AMR graph:"	"(s / state-01
+      :ARG0 (p / person :wiki -
+            :name (n / name :op1 ""Mark"" :op2 ""Fitzpatrick"")
+            :ARG0-of (h / have-org-role-91
+                  :ARG1 (r / research-institute :wiki ""International_Institute_for_Strategic_Studies""
+                        :name (n2 / name :op1 ""International"" :op2 ""Institute"" :op3 ""for"" :op4 ""Strategic"" :op5 ""Studies""))
+                  :ARG2 (f / fellow
+                        :mod (s2 / senior)))))"	"(s1 / state-01
+  :ARG0 (p1 / person
+            :name (n1 / name :op1 ""Mark"" :op2 ""Fitzpatrick"")
+            :ARG0-of (h1 / have-org-role-91
+                        :ARG1 (o1 / organization
+                                  :name (n2 / name
+                                             :op1 ""International""
+                                             :op2 ""Institute""
+                                             :op3 ""for""
+                                             :op4 ""Strategic""
+                                             :op5 ""Studies""))
+                        :ARG2 (f1 / fellow :mod (s2 / senior))))
+  :ARG1 (t1 / thing))"
+21	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: m1456
+AMR graph:"	"(s / string-entity :value ""m1456"")"	"(n1 / name :op1 ""m1456"")"
+22	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Iran is a signatory to the Nuclear Nonproliferation Treaty but not a member of the Nuclear Suppliers Group.
+AMR graph:"	"(c / contrast-01
+      :ARG1 (s / sign-02
+            :ARG0 (c2 / country :wiki ""Iran""
+                  :name (n / name :op1 ""Iran""))
+            :ARG1 (t / treaty :wiki ""Treaty_on_the_Non-Proliferation_of_Nuclear_Weapons""
+                  :name (n2 / name :op1 ""Nuclear"" :op2 ""Nonproliferation"" :op3 ""Treaty"")))
+      :ARG2 (h / have-org-role-91 :polarity -
+            :ARG0 c2
+            :ARG1 (o / organization :wiki ""Nuclear_Suppliers_Group""
+                  :name (n3 / name :op1 ""Nuclear"" :op2 ""Suppliers"" :op3 ""Group""))
+            :ARG2 (m / member)))"	"(a1 / and
+  :op1 (h1 / have-rel-role-91
+        :ARG0 (c1 / country
+              :name (n1 / name :op1 ""Iran""))
+        :ARG1 (t1 / treaty
+              :name (n2 / name :op1 ""Nuclear"" :op2 ""Nonproliferation"" :op3 ""Treaty""))
+        :ARG2 (s1 / signatory))
+  :op2 (h2 / have-org-role-91
+        :ARG0 c1
+        :ARG1 (o1 / organization
+              :name (n3 / name :op1 ""Nuclear"" :op2 ""Suppliers"" :op3 ""Group""))
+        :ARG2 (m1 / member)
+        :polarity -))"
+23	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: We are in Delma a 1, in local pinson.
+AMR graph:"	"(b / be-located-at-91
+      :ARG1 (w / we)
+      :ARG2 (p / pinson
+            :mod (l / local)
+            :location (r / road :wiki ""Delmas,_Ouest""
+                  :name (n / name :op1 ""Delmas"" :op2 1))))"	"(b0 / be-located-at-91
+      :ARG1 (w / we)
+      :ARG2 (b1 / building
+                :name (n1 / name :op1 ""Local"" :op2 ""Pinson"")
+                :part-of (n2 / neighborhood
+                            :name (n3 / name :op1 ""Delma"" :op2 ""1""))))"
+24	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: 2007-06-18
+AMR graph:"	"(d2 / date-entity
+  :day 18
+  :month 6
+  :year 2007)"	"(d / date-entity
+  :year 2007
+  :month 6
+  :day 18)"
+25	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: How can we find help and food in fontamara 43 rue menos
+AMR graph:"	"(h / have-manner-91
+      :ARG1 (p / possible-01
+            :ARG1 (f / find-01
+                  :ARG0 (w / we)
+                  :ARG1 (a2 / and
+                        :op1 (h2 / help-01
+                              :ARG2 w)
+                        :op2 (f2 / food))
+                  :location (s / street-address-91
+                        :ARG2 (r / road :wiki -
+                              :name (n / name :op1 ""Rue"" :op2 ""Menos"")))
+                  :location (s2 / street-address-91
+                        :ARG2 (r2 / road :wiki -
+                              :name (n2 / name :op1 ""Fontamara"" :op2 43)))))
+      :ARG2 (a / amr-unknown))"	"(p / possible-01
+  :ARG1 (f1 / find-01
+    :ARG0 (w / we)
+    :ARG1 (a1 / and
+      :op1 (h / help-01 :ARG1 w)
+      :op2 (f2 / food))
+    :location (f3 / facility
+      :name (n1 / name :op1 ""Fontamara"")
+      :location (a3 / address-entity
+        :street (s / street
+          :name (n2 / name :op1 ""Rue"" :op2 ""Menos""))
+        :house-number (n3 / number :value 43)))
+    :manner (a2 / amr-unknown))
+  :mode interrogative)"
+26	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: With regard to the situation in Palestine and Israel Wen stated that relevant UN resolutions must be implemented.
+AMR graph:"	"(s / state-01
+      :ARG0 (p / person :wiki ""Wen_Jiabao"" :name (n / name :op1 ""Wen""))
+      :ARG1 (o / obligate-01
+            :ARG2 (i / implement-01
+                  :ARG1 (r / resolution
+                        :mod (o2 / organization :wiki ""United_Nations"" :name (n4 / name :op1 ""UN""))
+                        :ARG1-of (r2 / relevant-01))))
+      :manner (r3 / regard-01
+            :ARG0 p
+            :ARG1 (s2 / situation
+                  :location (a / and
+                        :op1 (c / country :wiki ""State_of_Palestine"" :name (n2 / name :op1 ""Palestine""))
+                        :op2 (c2 / country :wiki ""Israel"" :name (n3 / name :op1 ""Israel""))))))"	"(s1 / state-01
+  :ARG0 (p1 / person
+        :name (n1 / name :op1 ""Wen""))
+  :ARG1 (o1 / obligate-01
+        :ARG1 (i1 / implement-01
+              :ARG1 (r1 / resolution
+                    :mod (r2 / relevant)
+                    :poss (o2 / organization
+                          :name (n2 / name :op1 ""UN"")))))
+  :topic (s2 / situation
+        :location (a1 / and
+              :op1 (c1 / country
+                    :name (n3 / name :op1 ""Palestine""))
+              :op2 (c2 / country
+                    :name (n4 / name :op1 ""Israel"")))))"
+27	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: At least three members of a family in Indias northeastern state of Tripura were hacked to death by a tribal mob for allegedly practicing witchcraft, police said Thursday.
+AMR graph:"	"(h / hack-01
+      :ARG0 (m / mob
+            :mod (t2 / tribe))
+      :ARG1 (m2 / member
+            :part-of (f / family)
+            :quant (a / at-least :op1 3))
+      :location (s / state :wiki ""Tripura""
+            :name (n / name :op1 ""Tripura"")
+            :location (n3 / northeast
+                  :part-of (c / country :wiki ""India""
+                        :name (n2 / name :op1 ""India""))))
+      :degree (d2 / die-01)
+      :ARG1-of (c2 / cause-01
+            :ARG0 (p2 / practice-01
+                  :ARG0 m2
+                  :ARG1 (w / witchcraft)
+                  :ARG1-of (a3 / allege-01)))
+      :ARG1-of (s2 / say-01
+            :ARG0 (p3 / police)
+            :time (d / date-entity
+                  :weekday (t / thursday))))"	"(s / say-01
+  :ARG0 (p / police)
+  :ARG1 (k / kill-01
+          :ARG1 (p2 / person
+                  :quant (a / at-least :op1 3)
+                  :ARG0-of (m / member-01
+                             :ARG1 (f / family
+                                     :location (s2 / state
+                                                :mod (n / north-east :comp-of c)
+                                                :name (n2 / name :op1 ""Tripura"")
+                                                :part-of (c / country
+                                                           :name (n1 / name :op1 ""India"")))))))
+          :ARG0 (m2 / mob
+                  :mod (t / tribal))
+          :manner (h / hack-01
+                    :ARG0 m2
+                    :ARG1 p2)
+          :cause (a2 / allege-01
+                   :ARG1 (p3 / practice-01
+                           :ARG0 p2
+                           :ARG1 (w / witchcraft))))
+  :time (d / date-entity
+         :weekday (t2 / thursday)))"
+28	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: e.g. i'll say hello to someone from uni and they'll ignore me, but 30 minutes later they'll decide they want my help with some work... and i'll give it to them.
+AMR graph:"	"(e / exemplify-01
+      :ARG0 (c / contrast-01
+            :ARG1 (a / and
+                  :op1 (s / say-01
+                        :ARG0 (i / i)
+                        :ARG1 (h / hello)
+                        :ARG2 (s2 / someone
+                              :source (u / university)))
+                  :op2 (i2 / ignore-01
+                        :ARG0 s2
+                        :ARG1 i))
+            :ARG2 (a2 / and
+                  :op1 (d / decide-01
+                        :ARG0 s2
+                        :ARG1 (w / want-01
+                              :ARG0 s2
+                              :ARG1 (h2 / help-01
+                                    :ARG0 i
+                                    :ARG1 (w2 / work-01
+                                          :mod (s3 / some))
+                                    :ARG2 s2))
+                        :time (a3 / after
+                              :op1 a
+                              :quant (t / temporal-quantity :quant 30
+                                    :unit (m2 / minute))))
+                  :op2 (g / give-01
+                        :ARG0 i
+                        :ARG1 h2
+                        :ARG2 s2))))"	"(a / and
+  :op1 (g1 / greet-01
+        :ARG0 (i / i)
+        :ARG1 (p / person
+              :source (u / university)))
+  :op2 (i1 / ignore-01
+        :ARG0 p
+        :ARG1 i)
+  :op3 (d1 / decide-01
+        :ARG0 p
+        :ARG1 (w1 / want-01
+              :ARG0 p
+              :ARG1 (h1 / help-01
+                    :ARG0 i
+                    :ARG1 p
+                    :ARG2 (w2 / work-01
+                          :ARG0 p)))
+        :time (a1 / after
+              :op1 (t1 / temporal-quantity
+                    :quant 30
+                    :unit (m1 / minute))))
+  :op4 (g2 / give-01
+        :ARG0 i
+        :ARG1 h1
+        :ARG2 p))"
+29	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Anti-government insurgents have increased their violent activities across the Himalayan kingdom since the 9-month-long nationwide state of emergency expired at the end of August 2002.
+AMR graph:"	"(i / increase-01
+      :ARG0 (i2 / insurgent
+            :ARG0-of (o / oppose-01
+                  :ARG1 (g / government-organization
+                        :ARG0-of (g2 / govern-01))))
+      :ARG1 (a / activity-06
+            :ARG0 i2
+            :mod (v / violent))
+      :location (a2 / across
+            :op1 (k / kingdom
+                  :location (w / world-region :wiki ""Himalayas"" :name (n / name :op1 ""Himalaya""))))
+      :time (s / since
+            :op1 (e2 / expire-01
+                  :ARG1 (s2 / state
+                        :mod (e3 / emergency)
+                        :extent (n2 / nationwide)
+                        :ARG1-of (l / long-03
+                              :ARG2 (t2 / temporal-quantity :quant 9
+                                    :unit (m2 / month))))
+                  :time (e / end-01
+                        :ARG1 (d / date-entity :year 2002 :month 8)))))"	"(i1 / increase-01
+  :ARG1 (a1 / activity
+        :mod (v1 / violent-03)
+        :poss s1
+        :location (k1 / kingdom
+              :mod (m1 / mountain-range
+                    :name (n1 / name :op1 ""Himalayas""))))
+  :ARG0 (s1 / insurgent
+        :ARG0-of (o1 / oppose-01 :ARG1 (g1 / government)))
+  :time (s2 / since
+        :op1 (e1 / expire-01
+              :ARG1 (s3 / state-of-emergency
+                    :mod (n2 / nationwide)
+                    :duration (t1 / temporal-quantity
+                          :quant 9
+                          :unit (m2 / month)))
+              :time (e2 / end-01
+                    :op1 (d1 / date-entity :year 2002 :month 8)))))"
+30	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Xinhua News Agency , Seoul , August 31st , by reporter Shuifu Tang
+AMR graph:"	"(b / byline-91
+      :ARG0 (p / publication :wiki ""Xinhua_News_Agency""
+            :name (n / name :op1 ""Xinhua"" :op2 ""News"" :op3 ""Agency""))
+      :ARG1 (p2 / person :wiki -
+            :name (n2 / name :op1 ""Shuifu"" :op2 ""Tang"")
+            :ARG0-of (r / report-01))
+      :location (c3 / city :wiki ""Seoul""
+            :name (n3 / name :op1 ""Seoul""))
+      :time (d2 / date-entity :month 8 :day 31))"	"(r / report-01
+  :ARG0 (p / person
+          :name (n3 / name :op1 ""Shuifu"" :op2 ""Tang"")
+          :ARG0-of (h / have-org-role-91
+                    :ARG1 (o1 / organization
+                          :name (n1 / name :op1 ""Xinhua"" :op2 ""News"" :op3 ""Agency""))
+                    :ARG2 (rpt / reporter)))
+  :location (c1 / city
+            :name (n2 / name :op1 ""Seoul""))
+  :time (d1 / date-entity :month 8 :day 31))"
+31	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The six are all members of an outdoor sports club in Xining, Qinghai's provincial capital.
+AMR graph:"	"(p / person :quant 6
+      :domain (m / member
+            :ARG1-of (i2 / include-91
+                  :ARG2 (c / club
+                        :mod (s / sport)
+                        :mod (o / outdoors)))
+            :mod (a / all)
+            :location (c2 / city :wiki ""Xining"" :name (n / name :op1 ""Xining"")
+                  :ARG0-of (h / have-org-role-91
+                        :ARG1 (p2 / province :wiki ""Qinghai"" :name (n2 / name :op1 ""Qinghai""))
+                        :ARG2 (c3 / capital)))))"	"(m1 / member-01
+      :ARG1 (p1 / person
+                :quant 6)
+      :ARG2 (c1 / club
+                :mod (s1 / sport)
+                :mod (o1 / outdoor)
+                :location (x1 / city
+                              :name (n1 / name :op1 ""Xining"")
+                              :ARG0-of (k1 / capital-01
+                                           :ARG1 (p2 / province
+                                                     :name (n2 / name :op1 ""Qinghai""))))))"
+32	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Why is it so hard to understand ?
+AMR graph:"	"(h / hard-02
+      :ARG1 (u / understand-01
+            :ARG1 (i / it))
+      :ARG1-of (c / cause-01
+            :ARG0 (a / amr-unknown))
+      :degree (s / so))"	"(d / difficult-02
+  :mode interrogative
+  :domain (u / understand-01)
+  :degree (s / so)
+  :cause (a / amr-unknown))"
+33	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The deal would most likely have remained secret had the pirates not hijacked the ship and begun speaking to the media by satellite phone.
+AMR graph:"	"(l / likely-01
+      :ARG1 (r / remain-01
+            :ARG1 (d / deal-01)
+            :ARG3 (s / secret))
+      :condition (a / and
+            :op1 (h / hijack-01 :polarity -
+                  :ARG0 (p / pirate)
+                  :ARG1 (s2 / ship))
+            :op2 (b / begin-01 :polarity -
+                  :ARG0 p
+                  :ARG1 (s3 / speak-01
+                        :ARG0 p
+                        :ARG2 (m2 / media)
+                        :medium (p2 / phone
+                              :mod (s4 / satellite)))))
+      :ARG2-of (h2 / have-degree-91
+            :ARG1 r
+            :ARG3 (m / most)))"	"(l / likely-01
+  :degree (m / most)
+  :ARG1 (r / remain-01
+            :ARG1 (d / deal)
+            :ARG2 (s / secret))
+  :condition (a / and
+                :op1 (h / hijack-01
+                        :ARG0 (p / pirate)
+                        :ARG1 (s2 / ship)
+                        :polarity -)
+                :op2 (b / begin-01
+                        :ARG0 p
+                        :ARG1 (s3 / speak-01
+                                  :ARG0 p
+                                  :ARG2 (m2 / media)
+                                  :instrument (p2 / phone
+                                                 :mod (s4 / satellite)))
+                        :polarity -)))"
+34	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The implication was that corrupt or sympathetic members of the Venezuelan military may be aiding guerrillas.
+AMR graph:"	"(i / imply-01
+      :ARG1 (p / possible-01
+            :ARG1 (a / aid-01
+                  :ARG0 (o / or
+                        :op1 (p2 / person
+                              :ARG0-of (h / have-org-role-91
+                                    :ARG1 (m3 / military
+                                          :mod (c2 / country :wiki ""Venezuela""
+                                                :name (n / name :op1 ""Venezuela"")))
+                                    :ARG2 (m / member))
+                              :ARG1-of (c / corrupt-01))
+                        :op2 (p3 / person
+                              :ARG0-of (h2 / have-org-role-91
+                                    :ARG1 m3
+                                    :ARG2 (m2 / member))
+                              :ARG0-of (s / sympathize-01)))
+                  :ARG2 (g / guerrilla))))"	"(i1 / imply-01
+  :ARG1 (p1 / possible-01
+    :ARG1 (a1 / aid-01
+      :ARG1 (g1 / guerrilla)
+      :ARG0 (p2 / person
+        :ARG0-of (m1 / member-01
+          :ARG1 (m2 / military
+            :mod (c1 / country
+              :name (n1 / name :op1 ""Venezuela""))))
+        :mod (o1 / or
+          :op1 (c2 / corrupt)
+          :op2 (s1 / sympathetic))))))"
+35	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The Vietnam-Germany trade volume rose 7.7 percent in 2003 to reach 1.4 billion dollars, of which 815.4 million dollars came from Vietnamese exports.
+AMR graph:"	"(r / rise-01
+      :ARG1 (v / volume
+            :mod (t / trade-01
+                  :ARG0 (c / country :wiki ""Vietnam"" :name (n / name :op1 ""Vietnam""))
+                  :ARG2 (c2 / country :wiki ""Germany"" :name (n2 / name :op1 ""Germany""))))
+      :ARG2 (p / percentage-entity :value 7.7)
+      :ARG4 (r2 / reach-01
+            :ARG0 v
+            :ARG1 (m / monetary-quantity :quant 1400000000
+                  :unit (d2 / dollar)
+                  :ARG2-of (i / include-91
+                        :ARG1 (m2 / monetary-quantity :quant 815400000
+                              :ARG1-of (c3 / come-03
+                                    :ARG2 (e / export-01
+                                          :ARG0 c))
+                              :unit (d3 / dollar)))))
+      :time (d / date-entity :year 2003))"	
+36	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Thank you.
+AMR graph:"	"(t / thank-01
+      :ARG0 (i / i)
+      :ARG1 (y / you))"	"(t1 / thank-01
+   :ARG0 (i1 / i)
+   :ARG1 (y1 / you))"
+37	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Crime; weapons; international; money
+AMR graph:"	"(a / and
+      :op1 (c / crime-02)
+      :op2 (w / weapon)
+      :op3 (i / international)
+      :op4 (m / money))"	"(a1 / and
+   :op1 (c1 / crime)
+   :op2 (w1 / weapon)
+   :op3 (i1 / international)
+   :op4 (m1 / money))"
+38	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: That's normal, it has always been the case that a whore is heartless and a performer is unrighteous
+AMR graph:"	"(m / multi-sentence
+      :snt1 (n / normal-02
+            :ARG1 (t / that))
+      :snt2 (a / and
+            :op2 (a2 / and
+                  :op1 (h / heartless
+                        :domain (w2 / whore))
+                  :op2 (r / righteous-07 :polarity -
+                        :ARG1 (p2 / person
+                              :ARG0-of (p3 / perform-01)))
+                  :time (a3 / always))))"	"(n1 / normal-02
+  :ARG1 (a1 / and
+    :op1 (h1 / heartless
+      :domain (p1 / person
+        :ARG0-of (p2 / prostitute-01))
+      :frequency (a2 / always))
+    :op2 (r1 / righteous
+      :polarity -
+      :domain (p3 / person
+        :ARG0-of (p4 / perform-01))
+      :frequency (a3 / always))))"
+39	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Some of these flights were innocent violations by ranchers in the Amazon flying between plantations.
+AMR graph:"	"(f2 / fly-01
+      :mod (s / some)
+      :ARG1-of (i2 / include-91
+            :ARG2 (f3 / fly-01
+                  :mod (t2 / this)))
+      :ARG1-of (v2 / violate-01
+            :ARG0 (p / person
+                  :ARG0-of (r / ranch-01)
+                  :ARG1-of (f / fly-01
+                        :location (b / between
+                              :op1 (p3 / plantation)))
+                  :location (w / world-region :wiki ""Amazon_basin""
+                        :name (n / name :op1 ""Amazon"")))
+            :ARG1-of (i / innocent-01)))"	
+40	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: What can I do about this?
+AMR graph:"	"(a / amr-unknown
+      :ARG1-of (d / do-02
+            :ARG0 (i / i)
+            :ARG2 (t / this)
+            :ARG1-of (p / possible-01)))"	"(p1 / possible-01
+  :ARG1 (d1 / do-02
+    :ARG0 (i1 / i)
+    :ARG1 (x1 / amr-unknown)
+    :topic (t1 / this)))"
+41	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: We need water to drink.
+AMR graph:"	"(n / need-01
+      :ARG0 (w / we)
+      :ARG1 (w2 / water
+            :purpose (d / drink-01
+                        :ARG0 w
+                        :ARG1 w2)))"	"(n1 / need-01
+  :ARG0 (p1 / we)
+  :ARG1 (w1 / water)
+  :purpose (d1 / drink-01
+            :ARG0 p1
+            :ARG1 w1))"
+42	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: He went on to recall that as his parents had been swept away by tidal wave at the start of the tragedy, he was left alive alone.
+AMR graph:"	"(a2 / and
+      :op1 (r / recall-02
+            :ARG0 (h / he)
+            :ARG1 (s / sweep-01
+                  :ARG0 (w / wave
+                        :mod (t / tide))
+                  :ARG1 (p / parent
+                        :poss h)
+                  :manner (a / away)
+                  :time (s2 / start-01
+                        :ARG0 (t2 / tragedy))))
+      :op2 (l / leave-12
+            :ARG1 h
+            :ARG2 (a3 / alone
+                  :mod (l2 / live-01
+                        :ARG0 h))))"	"(g1 / go-on-03
+  :ARG0 (h1 / he)
+  :ARG1 (r1 / recall-01
+    :ARG0 h1
+    :ARG1 (c1 / cause-01
+      :ARG0 (s1 / sweep-02
+        :ARG0 (w1 / wave :mod (t1 / tidal))
+        :ARG1 (p1 / person
+          :ARG0-of (h2 / have-rel-role-91 :ARG0 h1 :ARG1 (p2 / parent))
+          :quant 2)
+        :direction (a1 / away)
+        :time (s2 / start-01 :ARG1 (t2 / tragedy)))
+      :ARG1 (r2 / remain-01
+        :ARG1 h1
+        :ARG2 (a2 / and :op1 (a3 / alive) :op2 (a4 / alone))))))"
+43	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Does she even have a history of mental illness or a diagnosis?
+AMR graph:"	"(h / have-03
+      :ARG0 (s / she)
+      :ARG1 (o / or
+            :op1 (h2 / history
+                  :consist-of (i / ill-01
+                        :ARG1 s
+                        :ARG2 (m / mental)))
+            :op2 (d / diagnose-01
+                  :ARG1 s))
+      :mod (e / even)
+      :polarity (a / amr-unknown))"	"(h / have-03
+  :ARG0 (p / person)
+  :ARG1 (o / or
+          :op1 (h2 / history
+                 :poss p
+                 :topic (i / illness
+                          :mod (m / mental)))
+          :op2 (d / diagnose-01
+                 :ARG1 p
+                 :ARG2 i))
+  :mode interrogative)"
+44	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: I do n't think you can blame 288 for creating those people .
+AMR graph:"	"(t / think-01
+      :ARG0 (i / i)
+      :ARG1 (r / recommend-01 :polarity -
+            :ARG1 (b / blame-01
+                  :ARG0 (y / you)
+                  :ARG1 (r2 / road :wiki ""Virginia_State_Route_288"" :name (x / name :op1 ""288""))
+                  :ARG2 (c / create-01
+                        :ARG1 (p / person
+                              :mod (t2 / that))))
+            :ARG2 y))"	"(t1 / think-01
+  :ARG0 (i1 / i)
+  :polarity -
+  :ARG1 (a1 / able-01
+    :ARG0 (y1 / you)
+    :ARG1 (b1 / blame-01
+      :ARG0 y1
+      :ARG1 (x1 / thing
+        :name (n1 / name :op1 ""288""))
+      :ARG2 (c1 / create-01
+        :ARG0 x1
+        :ARG1 (p1 / person
+          :mod (d1 / those))))))"
+45	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The Immigrations Bureau stated that they only recently received intelligence reports on Hambali's record in the country.
+AMR graph:"	"(s / state-01
+      :ARG0 (g / government-organization :wiki -
+            :name (n / name :op1 ""Immigrations"" :op2 ""Bureau""))
+      :ARG1 (r / receive-01
+            :ARG0 g
+            :ARG1 (r2 / report-01
+                  :ARG0 (i / intelligence)
+                  :ARG1 (r3 / record-01
+                        :ARG0 (p / person :wiki ""Riduan_Isamuddin""
+                              :name (n2 / name :op1 ""Hambali""))
+                        :location (c / country))
+                  :ARG2 g)
+            :time (r4 / recent
+                  :mod (o2 / only))))"	"(s1 / state-01
+  :ARG0 (g1 / government-organization
+        :name (n1 / name
+              :op1 ""Immigrations""
+              :op2 ""Bureau""))
+  :ARG1 (r3 / receive-01
+        :ARG0 g1
+        :ARG1 (r1 / report
+              :mod (i1 / intelligence)
+              :topic (r2 / record
+                    :poss (p1 / person
+                          :name (h1 / name
+                                :op1 ""Hambali""))
+                    :location (c1 / country)))
+        :time (r4 / recent
+              :mod (o1 / only))))"
+46	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: 2008-10-08
+AMR graph:"	(d / date-entity :year 2008 :month 10 :day 8)	"(d1 / date-entity
+      :year 2008
+      :month 10
+      :day 8)"
+47	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: 09/02/2010 13:25
+AMR graph:"	"(d / date-entity :time ""13:25"" :day 9 :month 2 :year 2010)"	(d / date-entity :year 2010 :month 9 :day 2 :hour 13 :minute 25)
+48	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: The daily newspaper O Estado de Sao Paolo stated in an editorial the week of 20040718-20040824 -- the extreme measure raises ethical and juridical problems exceeding any potential benefits.
+AMR graph:"	"(s / state-01
+      :ARG0 (n / newspaper :wiki ""O_Estado_de_S._Paulo"" :name (n2 / name :op1 ""O"" :op2 ""Estado"" :op3 ""de"" :op4 ""Sao"" :op5 ""Paolo"")
+            :frequency (r2 / rate-entity-91
+                  :ARG3 (t / temporal-quantity :quant 1
+                        :unit (d3 / day))))
+      :ARG1 (r / raise-01
+            :ARG0 (m / measure-02
+                  :mod (e / extreme))
+            :ARG1 (a / and
+                  :op1 (p / problem
+                        :topic (e2 / ethics)
+                        :ARG0-of (e3 / exceed-01
+                              :ARG1 (b / benefit-01
+                                    :mod (p3 / potential)
+                                    :mod (a2 / any))))
+                  :op2 (p2 / problem
+                        :topic (j / juridical)
+                        :ARG0-of e3)))
+      :medium (e4 / editorial)
+      :time (w / week
+            :mod (d4 / date-interval
+                  :op1 (d / date-entity :year 2004 :month 7 :day 18)
+                  :op2 (d2 / date-entity :year 2004 :month 7 :day 24))))"	"(s / say-01
+  :ARG0 (n / newspaper
+            :mod (d1 / daily)
+            :name (n2 / name :op1 ""O"" :op2 ""Estado"" :op3 ""de"" :op4 ""Sao"" :op5 ""Paolo""))
+  :medium (e1 / editorial)
+  :time (t1 / temporal-quantity
+            :quant 1
+            :unit (w1 / week)
+            :time (d2 / date-entity :value ""20040718-20040824""))
+  :content (r / raise-01
+              :ARG0 (m1 / measure :mod (e2 / extreme))
+              :ARG1 (p1 / problem
+                       :mod (e3 / ethical)
+                       :mod (j1 / juridical)
+                       :ARG1-of (e4 / exceed-01
+                                   :ARG2 (b1 / benefit
+                                            :mod (p2 / potential)
+                                            :quant (a1 / any))))))"
+49	"Generate an Abstract Meaning Representation (AMR) graph for the following sentence: Tang stated that the SCO will pass a temporary pact on SCO's foreign policies at the meeting on 23 November 2002.
+AMR graph:"	"(s / state-01
+      :ARG0 (p / person :wiki ""Tang_Jiaxuan"" :name (n / name :op1 ""Tang""))
+      :ARG1 (p2 / pass-01
+            :ARG0 (o2 / organization :wiki ""Shanghai_Cooperation_Organisation"" :name (n3 / name :op1 ""SCO""))
+            :ARG1 (p3 / pact
+                  :mod (t / temporary)
+                  :topic (p4 / policy-01
+                        :ARG0 o2
+                        :ARG2 (f / foreign)))
+            :time (m / meet-03
+                  :time (d / date-entity :day 23 :month 11 :year 2002))))"	"(s / state-01
+  :ARG0 (p / person
+        :name (n / name :op1 ""Tang""))
+  :ARG1 (a / approve-01
+        :ARG0 (o / organization
+              :name (n2 / name :op1 ""SCO""))
+        :ARG1 (p2 / pact
+              :mod (t / temporary)
+              :topic (p3 / policy
+                    :mod (f / foreign)
+                    :poss o))
+        :time (f2 / future)
+        :time (m / meet-03
+              :time (d / date-entity :day 23 :month 11 :year 2002))))"

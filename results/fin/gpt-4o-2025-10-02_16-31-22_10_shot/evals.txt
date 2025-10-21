@@ -1,0 +1,80 @@
+invalid AMR: (q / query-01
+      :ARG0 (o / organization :wiki "People's_Mujahedin_of_Iran"
+            :name (n / name :op1 "The" :op2 "People's" :op3 "Mujahedeen"))
+      :ARG1 (a / accuse-01
+            :ARG0 o
+            :ARG1 (a2 / authority
+                  :mod (c / country :wiki "France"
+                        :name (n2 / name :op1 "French")))
+            :ARG2 (c2 / carry-out-02
+                  :ARG0 a2
+                  :ARG1 (o2 / operation)
+                  :ARG2 (d / deal-01
+                        :ARG1 a2
+                        :ARG2 (g / government
+                              :mod (c3 / country :wiki "Iran"
+                                    :name (n3 / name :op1 "Iranian")))))) | reason: ['PENMAN parse error: \n  line 16\n                                        :name (n3 / name :op1 "Iranian"))))))\n                                                                             ^\nDecodeError: Unexpected end of input']
+invalid AMR: (b / both
+      :op1 (t / take-01
+            :ARG0 b
+            :ARG1 (w / what
+                  :ARG0 (t2 / they)))
+      :op2 (n / need-01
+            :ARG0 (t2 / they))) | reason: ["Multiple :instance triples for variable 't2' (they and they)."]
+invalid AMR: (a / and
+      :op1 (h / hack-01
+            :ARG1 (p / person
+                  :quant (m2 / at-least :op1 3)
+                  :ARG0-of (m / member)
+                  :ARG1 (f / family
+                        :location (s / state :location (c2 / country :wiki "India" :name (n3 / name :op1 "India"))
+                              :mod (n2 / northeast)
+                              :name (t2 / name :op1 "Tripura"))))
+            :ARG1-of (d / die-01)
+            :ARG0 (m3 / mob
+                  :mod (t3 / tribe)))
+      :op2 (s / say-01
+            :ARG0 (p2 / police)
+            :ARG1 (p3 / practice-01
+                  :ARG0 p
+                  :ARG1 (w / witchcraft))
+            :time (d2 / date-entity :day 5 :month 10 :year 2023))) | reason: ["Multiple :instance triples for variable 's' (state and say-01)."]
+invalid AMR: (p / past
+      :ARG1 (i / increase-01
+            :ARG0 (i2 / insurgent
+                  :mod (g / government :polarity -))
+            :ARG1 (a / activity
+                  :mod (v / violence)
+                  :poss i2)
+            :location (k / kingdom
+                  :mod (c / country :wiki "Himalayas"
+                        :name (n / name :op1 "Himalayan")))
+            :time (s / since
+                  :op1 (e / expire-01
+                        :ARG1 (s2 / state-of-emergency
+                              :ARG1-of (n / nation)
+                              :duration (d / duration-quantity :quant 9 :unit (m / month))
+                              :mod (w / worldwide)))
+                  :op2 (e2 / end-01
+                        :time (a2 / date-entity :month 8 :year 2002))))) | reason: ["Multiple :instance triples for variable 'n' (name and nation)."]
+invalid AMR: 
+(t / think-01
+      :polarity -
+      :ARG0 (i / i)
+      :ARG1 (b / blame-01
+            :ARG0 (y / you)
+            :ARG1 (n / number :value 288)
+            :ARG2 (c / create-01
+                  :ARG0 n
+                  :ARG1 (p / person :quant (t / those)))))
+ | reason: ["Multiple :instance triples for variable 't' (think-01 and those)."]
+
+Valid AMRs: 90.00% (45/50)
+
+Metrics (valid only)
+F1: 56.86 (CI: [52.97, 60.69])
+Precision: 53.82 (CI: [49.34, 58.09])
+Recall: 60.26 (CI: [56.54, 63.88])
+
+Optimization status:
+[(11.0, 11.0), (33.0, 33.0), (15.0, 15.0), (27.0, 27.0), (18.0, 18.0), (11.0, 11.0), (20.0, 20.0), (11.0, 11.0), (11.0, 11.0), (40.0, 40.0), (35.0, 35.0), (16.0, 16.0), (41.0, 41.0), (4.0, 4.0), (2.0, 2.0), (19.0, 19.0), (29.0, 29.0), (5.0, 5.0), (19.0, 19.0), (0.0, 0.0), (20.0, 20.0), (4.0, 4.0), (5.0, 5), (12.0, 12.0), (23.0, 23.0), (27.0, 27.0), (20.0, 20.0), (15.0, 15.0), (6.0, 6.0), (19.0, 19.0), (14.0, 14.0), (19.0, 19.0), (6.0, 6), (3.0, 3.0), (9.0, 9.0), (10.0, 10.0), (6.0, 6.0), (6.0, 6.0), (12.0, 12.0), (15.0, 15.0), (17.0, 17.0), (5.0, 5), (1.0, 1.0), (23.0, 23.0), (26.0, 26.0)]
