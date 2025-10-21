@@ -1,14 +1,8 @@
 # AMR Parsing with Large Language Models
 
-This project evaluates the performance of API-based Large Language Models (LLMs) for Abstract Meaning Representation (AMR) parsing, comparing different prompting strategies and model configurations.
+Abstract Meaning Representation (AMR) is a semantic representation framework that encodes semantic information as rooted, directed, acyclic graphs. This project explores how modern LLMs perform on AMR parsing tasks using the AMR 3.0 dataset, comparing different prompting strategies and model configurations. I do the following:
 
-## Overview
-
-Abstract Meaning Representation (AMR) is a semantic representation framework that encodes semantic information as rooted, directed, acyclic graphs. This project explores how modern LLMs perform on AMR parsing tasks using the AMR 3.0 dataset.
-
-## Key Features
-
-- Tests different approaches to improve LLM performance
+- Tests different approaches to improve LLM performance on AMR parsing
 - Tracks token usage and API costs across experiments
 - Uses Smatch++ for AMR parsing evaluation
 
