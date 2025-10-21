@@ -52,57 +52,6 @@ The project includes multiple experimental configurations:
 3. Run `prompting_and_analysis.ipynb` for main experiments
 4. Use `cost_calculation.ipynb` for token usage analysis
 
-## Installation
-
-1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-   cd project
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Set up environment variables:
-   Create a `.env` file in the project root with your OpenAI API key:
-   ```
-   OPENAI_API_KEY=your_api_key_here
-   ```
-
-## Usage
-
-1. Run `prompting_and_analysis.ipynb` for main experiments
-2. Use `cost_calculation.ipynb` for token usage analysis
-
 ## Results
 
-Results are stored in the `results/` directory with AMR parses, evaluation metrics, and cost summaries for each experimental configuration.
-
-## Contributing
-
-This is a research project for academic purposes. If you have suggestions or find issues, please feel free to open an issue or submit a pull request.
-
-## License
-
-This project is for academic research purposes. Please cite appropriately if you use this work in your research.
-
-## Citation
-
-If you use this project in your research, please cite:
-
-```bibtex
-@misc{amr_llm_parsing,
-  title={AMR Parsing with Large Language Models},
-  author={Your Name},
-  year={2025},
-  url={https://github.com/yourusername/amr-llm-parsing}
-}
-```
-
-## Acknowledgments
-
-- AMR 3.0 dataset
-- OpenAI for providing API access
-- Smatch++ evaluation framework
+Results are stored in the `results/` directory with AMR parses, evaluation metrics, AMR parses, and cost summaries for each experimental configuration.
