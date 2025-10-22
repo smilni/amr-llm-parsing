@@ -1,6 +1,0 @@
-digraph amr_graph {
-	rankdir=LR size="12,8"
-	s [label="s/string-entity" shape=circle]
-	node_0 [label="\"m1456\"" shape=rectangle]
-	s -> node_0 [label=":value"]
-}
