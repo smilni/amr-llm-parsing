@@ -1,0 +1,23 @@
+digraph amr_graph {
+	rankdir=LR size="12,8"
+	a3 [label="a3/avail-01" shape=circle]
+	l [label="l/list" shape=circle]
+	c [label="c/condition-01" shape=circle]
+	i [label="i/identify-01" shape=circle]
+	a2 [label="a2/and" shape=circle]
+	p [label="p/person" shape=circle]
+	h [label="h/have-org-role-91" shape=circle]
+	d [label="d/diplomat" shape=circle]
+	c2 [label="c2/country" shape=circle]
+	a3 -> l [label=":ARG2"]
+	a3 -> c [label=":ARG1-of"]
+	c -> i [label=":ARG2"]
+	i -> a2 [label=":ARG1"]
+	a2 -> p [label=":op1"]
+	p -> h [label=":ARG0-of"]
+	h -> d [label=":ARG2"]
+	a2 -> c2 [label=":op2"]
+	p -> c2 [label=":source"]
+	node_0 [label="-" shape=rectangle]
+	i -> node_0 [label=":polarity"]
+}

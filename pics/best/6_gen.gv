@@ -1,0 +1,22 @@
+digraph amr_graph {
+	rankdir=LR size="12,8"
+	n [label="n/normal-02" shape=circle]
+	a [label="a/and" shape=circle]
+	h [label="h/heartless-01" shape=circle]
+	p [label="p/person" shape=circle]
+	w [label="w/whore-01" shape=circle]
+	m [label="m/moral-02" shape=circle]
+	p2 [label="p2/person" shape=circle]
+	p3 [label="p3/perform-01" shape=circle]
+	a2 [label="a2/always" shape=circle]
+	n -> a [label=":domain"]
+	a -> h [label=":op1"]
+	h -> p [label=":ARG1"]
+	p -> w [label=":ARG0-of"]
+	a -> m [label=":op2"]
+	m -> p2 [label=":ARG1"]
+	p2 -> p3 [label=":ARG0-of"]
+	a -> a2 [label=":time"]
+	node_0 [label="-" shape=rectangle]
+	m -> node_0 [label=":polarity"]
+}

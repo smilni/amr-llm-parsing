@@ -1,0 +1,4 @@
+digraph amr_graph {
+	rankdir=LR size="12,8"
+	a [label="a/amr-empty" shape=circle]
+}

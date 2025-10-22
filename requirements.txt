@@ -6,4 +6,5 @@ faiss-cpu
 sentence-transformers
 langgraph
 langchain_openai
+graphviz
 mip==1.16rc0
